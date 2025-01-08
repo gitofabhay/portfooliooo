@@ -1,0 +1,153 @@
+.header {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+.projects{
+   margin-top: -20px; 
+    font-size: 10px;
+}
+.Flex {
+    font-weight: bolder;
+    list-style-type: square;
+}
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+.daddy_div {
+    border-top: 1px black solid;
+    display: flex;
+    column-gap: 55px;
+    justify-content: start;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.daddy {
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 1px;
+    color: rgb(236, 190, 133);
+    background-color: rgb(4, 106, 65); 
+    text-decoration: dotted;
+    font-family: 'Times New Roman', Times, serif;
+    height: 200px;
+    width: 390px;
+}
+.daddy:hover{
+    width: 30%;
+    height: 125%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.divs {
+    list-style-type: square;
+}
+
+footer {
+    border-top: 1px black solid;
+    margin-top: 5px;
+    margin-left: 14px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px;
+}
+.article {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    
+}
+.article:hover{
+    z-index: 1;
+    width: 50%;
+    height: 75%;
+    background-color: #252523;
+    color: #ffffff;
+}
+.expand-btn {
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.expand-btn:hover {
+    background-color: #45a049;
+}
+.toggle-checkbox {
+    display: none;
+}
+nav{
+    background-color: rgb(9, 1, 55);
+    color: lightpink;
+    
+}
+.languages-list {
+    display: none;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.toggle-checkbox:checked + .languages-list {
+    display: block;
+}
+.copyright{
+    margin-left: 45%;
+    
+}
+
+li:hover{
+   z-index: 1;
+   color: rgb(67, 75, 1);
+   background-color: rgb(39, 187, 175);
+}
+ul{
+    list-style: none;
+}
+
+
+#projectsDiv {
+    transition: all 0.3s ease; /* Smooth transition for expansion */
+    width: 100%; /* Default width */
+    background-color: #f5f5f5; /* Default color */
+}
+
+/* When the div is expanded */
+#projectsDiv.expanded {
+    width: 150%; /* 1.5x width */
+    background-color: #d3d3d3; /* New color */
+}
+
+/* Highlighting the active nav item */
+#nav-projects.active a {
+    color: #ff6347; /* Change color when active */
+    font-weight: bold;
+}
+/* Styling for languages-list
+.languages-list {
+    display: none;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Optional: Add transition for smoothness 
+.languages-list {
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.languages-list.show {
+    display: block;
+    max-height: 500px; /* Adjust this based on your list length 
+} */
